@@ -1,5 +1,5 @@
 import { useState } from "react";
-import wavslogo from "../assets/Wavslogo.webp";
+import wavslogo from "../assets/wavslogo.webp";
 
 export default function Header() {
   const [open, setOpen] = useState(true); // tracks mobile menu open/close
