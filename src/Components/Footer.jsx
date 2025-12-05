@@ -1,8 +1,7 @@
-import wavslogo from '../assets/Wavslogo.webp'
+import wavslogo from '../assets/wavslogo.webp' ;
 export default function Footer(){
 return(
     <>
-
 
 < div className=' flex flex-col md:flex-row text-red-700 container mx-auto px-10 items-start gap-4 md:gap-25 my-20'>
 
