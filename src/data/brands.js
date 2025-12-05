@@ -1,4 +1,4 @@
-import Maxn from '../assets/HomepageImages/Homeimage/Maxnproducts.webp'
+import Maxn from '../assets/HomepageImages/Homeimage/maxnproducts.webp'
 import Muscletech from '../assets/HomepageImages/Homeimage/muscleproducts.webp'
 import Labrada from '../assets/HomepageImages/Homeimage/Labradaproducts.webp'
 import wheyprotein from '../assets/HomepageImages/Homeimage/whey_protein.webp'
