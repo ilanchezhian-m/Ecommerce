@@ -29,9 +29,10 @@ function Home() {
          size={a.size} //sm/md/lg/xl ajustable
         />
        ))
-       };
+       }
     </div>
 {/* 2nd coloumn */}
+<div className='w-full flex justify-center '>
       <div className='grid grid-cols-2 md:grid-cols-4'>
           {brands.slice(3,7).map((a)=>(
             <Brandcard
@@ -41,8 +42,9 @@ function Home() {
             size={a.size} //sm/md/lg/xl ajustable
             />
           ))
-          };
+          }
       </div>
+</div>
 
 
 <div className='flex flex-col gap-4 md:flex-row justify-center my-4 '>
@@ -74,14 +76,14 @@ function Home() {
 
 
 
-{/* logos page shop by brands */}
+{/* logos page shop by brands logo  brandlogocard.jsx*/}
 
-        < div className='container mx-auto px-6 my-3'>
-                <div className='flex justify-evenly my-10'>
-                    <p className='font-bold text-gray-700 text-3xl'>SHOP BY BRANDS</p>
-                    <p className='font-bold text-red-700 text-2xl'>Explore</p>
+        < div className='w-full px-3 my-3 mx-auto max-w-none  md:max-w-none lg:max-w-7xl '>
+                <div className='flex justify-between my-10 lg:mx-3'>
+                    <p className='font-extrabold text-gray-600 text-4xl '>SHOP BY BRANDS</p>
+                    <p className='font-extrabold text-red-700 text-2xl'>Explore</p>
                </div>
-              <div className='grid grid-cols-2 md:grid-cols-4 gap-2 '>
+              <div className='grid grid-cols-2 md:grid-cols-5 gap-3 '>
               {brandslogo.map((b)=>(
                 <BrandLogocard
                 key ={b.id}
@@ -90,19 +92,19 @@ function Home() {
                 size ={b.size}
                 />
               ))
-               };
+               }
              </div>
           </div>
 
 
-{/* shop items categories list */}
+{/* shop items categories list brandcategories.jsx */}
 
 
-        < div className=' container mx-auto px-6 my-3'>
+        < div className=' w-full px-3 my-3 mx-auto max-w-none  md:max-w-none lg:max-w-7xl'>
 
-                <div className='flex justify-evenly my-10'>
-                  <p className='font-bold text-gray-700 text-3xl'>SHOP BY CATEGORIES</p>
-                  <p className='font-bold text-red-700 text-2xl'>Explore</p>
+                <div className='flex justify-between my-10 lg:mx-3'>
+                  <p className='font-extrabold text-gray-700 text-4xl'>SHOP BY CATEGORIES</p>
+                  <p className='font-extrabold text-red-700 text-2xl'>Explore</p>
                 </div>
 
               <div className='grid grid-cols-2 md:grid-cols-4 gap-2 '>
@@ -114,7 +116,7 @@ function Home() {
                 size={c.size}   
                 />
                ))
-               };
+               }
 
               </div>
         </div>

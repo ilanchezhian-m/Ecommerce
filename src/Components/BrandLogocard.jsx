@@ -1,6 +1,6 @@
 export default function BrandLogocard({image,name,size ="md"}){
 
-// shop by brands (homepage)
+// shop by brands logo (homepage)
 
      const sizes = {
     sm: "w-20 sm:w-24 md:w-28 lg:w-32",
@@ -15,7 +15,7 @@ export default function BrandLogocard({image,name,size ="md"}){
              alt={name}
              className={`${sizes[size]} h-auto`}
              />
-             <p className='font-bold text-red-700  bg-white w-full py-3 text-center shadow-lg rounded-md'>{name}</p>
+             <p className='font-extrabold text-red-700  bg-red w-full py-3 text-center shadow-lg rounded-md text-xs sm:text-sm whitespace-wrap md:text-xs lg:text-base'>{name}</p>
         </div>
         
         </>

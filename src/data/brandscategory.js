@@ -26,7 +26,7 @@ export const brandscategory = [
 	{ id: 9, name: 'Omega-3/Fish Oil', image: Omega3, size: 'xl' },
 	{ id: 10, name: 'Pre-Workout', image: PreWorkout, size: 'xl' },
 	{ id: 11, name: 'Speciality Supplements', image: Speciality, size: 'xl' },
-	{ id: 12, name: 'Testosterone Boosters,', image: Testosterone, size: 'xl' },
+	{ id: 12, name: 'Testosterone Boosters', image: Testosterone, size: 'xl' },
 	{ id: 13, name: 'Whey Protein', image: WheyProtein, size: 'xl' },
 	{ id: 14, name: 'Whey Protein Isolate', image: WheyProteinIsolate, size: 'xl' }
 ]

@@ -3,9 +3,9 @@ export default function Footer(){
 return(
     <>
 
-< div className=' flex flex-col md:flex-row text-red-700 container mx-auto px-10 items-start gap-4 md:gap-25 my-20'>
+< div className=' flex flex-col md:flex-row text-red-700 container  max-w-7xl mx-auto items-start gap-4 my-20 px-3'>
 
-    <div className="max-w-lg">
+    <div className="max-w-md">
     <img src={wavslogo} alt="wavslogo" className='w-60 h-auto ' />
     <p className=" text-xl text-wrap">
         Our Passion For Fitness Drives Us In Providing

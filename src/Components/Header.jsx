@@ -2,7 +2,7 @@ import { useState } from "react";
 import wavslogo from "../assets/wavslogo.webp";
 
 export default function Header() {
-  const [open, setOpen] = useState(true); // tracks mobile menu open/close
+  const [open, setOpen] = useState(false); // tracks mobile menu open/close
 
   return (
     <header className="border-b bg-white">

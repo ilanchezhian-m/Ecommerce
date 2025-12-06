@@ -18,7 +18,7 @@ export default function BrandCategories ({name,image,size}){
             <img src={image} 
             alt={name}
             className= {`${sizes[size]} h-auto`} />
-            <p className='font-bold text-red-700 bg-white w-full py-3 text-center rounded-md shadow-lg wrap-break-word'>{name}                      
+            <p className='font-extrabold text-red-700  bg-white w-full py-4 text-center rounded-md shadow-lg text-xs sm:text-sm whitespace-wrap md:text-xs lg:text-base '>{name}                      
                     </p>
         </div>
         </>
