@@ -47,26 +47,34 @@ function Home() {
 </div>
 
 
-<div className='flex flex-col gap-4 md:flex-row justify-center my-4 '>
-            <div className="flex justify-center mx-2 ">
-        <div className="inline-flex items-center gap-3 border border-red-700 py-3 px-4 rounded-md">
-          <img src={logo} className="w-6 h-6 bg-red-700" alt="logo truck design" />
-          <div className="flex flex-col leading-tight">
-            <p className="font-bold text-red-700">FREE SHIPPING</p>
-            <p className="font-medium">We Do Free Shipping All over India</p>
-          </div>
-        </div>
+<div className="w-full flex flex-col lg:flex-row gap-3  px-3 my-10 lg:justify-center">
+
+  {/* Card 1 */}
+  <div className="flex w-full lg:w-1/2 lg:max-w-3xl ">
+    <div className="flex w-full  items-center gap-3 border border-red-700 py-7 px-2 rounded-3xl justify-evenly">
+      <img src={logo} className="w-20 h-20 bg-red-700 rounded-lg" alt="logo truck design" />
+      <div className="flex flex-col leading-tight">
+        <p className="font-bold text-red-700 ">FREE SHIPPING</p>
+        <br />
+        <p className="font-medium">We Do Free Shipping All over India</p>
       </div>
-            <div className="flex justify-center">
-        <div className="inline-flex items-center gap-3 border border-red-700 py-3 px-4 rounded-md">
-          <img src={logo} className="w-6 h-6 bg-red-700" alt="logo truck design" />
-          <div className="flex flex-col leading-tight">
-            <p className="font-bold text-red-700">FREE SHIPPING</p>
-            <p className="font-medium">We Do Free Shipping All over India</p>
-          </div>
-        </div>
+    </div>
+  </div>
+
+  {/* Card 2 */}
+  <div className="flex w-full lg:w-1/2 lg:max-w-3xl ">
+    <div className="flex w-full  items-center gap-3 border border-red-700 py-7 px-2 rounded-3xl justify-evenly">
+      <img src={logo} className="w-20 h-20 bg-red-700 rounded-3xl " alt="logo truck design" />
+      <div className="flex flex-col leading-tight">
+        <p className="font-bold text-red-700">FREE CONSULTATION</p>
+        <br />
+        <p className="font-medium">24/7 online free consultation</p>
       </div>
- </div>
+    </div>
+  </div>
+
+</div>
+
 
  <div className='text-center my-10'>
   <h1 className='font-bold text-red-700 text-3xl'>WAVS SPORTS NUTRITION</h1>

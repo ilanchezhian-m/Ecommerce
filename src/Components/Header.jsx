@@ -14,16 +14,16 @@ export default function Header() {
       </div>
 
       {/* Main header row */}
-      <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-4 gap-6">
+      <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-2 gap-6">
         {/* Logo */}
         <img
           src={wavslogo}
-          className="h-12 w-auto"
+          className="h-20 w-auto"
           alt="Wave Sports Nutrition logo"
         />
 
         {/* Desktop nav (hidden on small screens) */}
-        <nav className="hidden md:flex gap-6 font-bold text-gray-700">
+        <nav className="hidden lg:flex gap-8 font-bold text-lg">
           <p>Shop</p>
           <p>Combo</p>
           <p>Brands</p>
@@ -35,7 +35,7 @@ export default function Header() {
 
     
         <button
-          className="md:hidden flex flex-col justify-center items-center h-10 w-10"
+          className="lg:hidden flex flex-col justify-center items-center h-10 w-10"
           onClick={() => setOpen((prev) => !prev)}
           aria-label="Toggle navigation menu"
         >
@@ -60,11 +60,11 @@ export default function Header() {
 
       {/* Mobile dropdown menu */}
       <div
-        className={`md:hidden bg-white shadow-lg px-6 overflow-hidden transition-all duration-200 ${
+        className={`lg:hidden bg-white shadow-lg px-6 overflow-hidden transition-all duration-200 ${
           open ? "max-h-96 py-4 opacity-100" : "max-h-0 py-0 opacity-0"
         }`}
       >
-        <div className="space-y-3 font-bold text-gray-700">
+        <div className="space-y-3 font-bold leading-7 text-gray-700">
           <p>Shop</p>
           <p>Combo</p>
           <p>Brands</p>

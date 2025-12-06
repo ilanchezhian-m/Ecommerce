@@ -4,12 +4,15 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family:"Poppins" ,sans-serif;
+  
 }
 body{
   
   -webkit-font-smoothing: antialiased;
-  background-color: #ffff; 
-  color: #111827;           /* Tailwind gray-900 */
+  background-color: #ffff   ;       /* Tailwind gray-900 */
+  color: #4F5055;
   box-sizing: border-box;
+  font-family:"Poppins" , Sans-serif;
+  letter-spacing: .03em;
+ 
 }
