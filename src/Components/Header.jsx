@@ -1,36 +1,43 @@
 import { useState } from "react";
 import wavslogo from "../assets/wavslogo.webp";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = useState(false); // tracks mobile menu open/close
+
+
+  const navItemStyle =({isActive}) => isActive ? "text-red-700 font-extrabold": "text-[#4F5055] hover:text-red-600";
+
 
   return (
     <header className="border-b bg-white">
       {/* Top red welcome bar */}
       <div className="bg-red-700 py-2">
-        <p className="text-white font-bold text-center">
+        <h1 className="text-white font-bold text-center">
           Welcome to Wave Sports Nutrition!
-        </p>
+        </h1>
       </div>
 
       {/* Main header row */}
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-2 gap-6">
         {/* Logo */}
-        <img
+        <NavLink className={navItemStyle} to="/" >
+          <img
           src={wavslogo}
           className="h-20 w-auto"
           alt="Wave Sports Nutrition logo"
-        />
+        /></NavLink>
+        
 
         {/* Desktop nav (hidden on small screens) */}
         <nav className="hidden lg:flex gap-8 font-bold text-lg">
-          <p>Shop</p>
-          <p>Combo</p>
-          <p>Brands</p>
-          <p>Categories</p>
-          <p>Merchandise</p>
-          <p>My Account</p>
-          <p>Cart</p>
+          <NavLink to="/shop" className={navItemStyle} >Shop</NavLink>
+          <NavLink className={navItemStyle} >Combo</NavLink>
+          <NavLink className={navItemStyle} >Brands</NavLink>
+          <NavLink className={navItemStyle} >Categories</NavLink>
+          <NavLink  className={navItemStyle} >Merchandise</NavLink>
+          <NavLink to ="/login"className={navItemStyle} >My Account</NavLink>
+          <NavLink className={navItemStyle} >Cart</NavLink>
         </nav>
 
     
@@ -57,7 +64,7 @@ export default function Header() {
         </button>
       </div>
 
-
+{/* mobile navbar otpions */}
       {/* Mobile dropdown menu */}
       <div
         className={`lg:hidden bg-white shadow-lg px-6 overflow-hidden transition-all duration-200 ${
@@ -75,5 +82,17 @@ export default function Header() {
         </div>
       </div>
     </header>
+
+
+// navlink react router using here 
+
+
+
+
+
+
+
+
+
   );
 }
