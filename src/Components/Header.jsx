@@ -71,14 +71,14 @@ export default function Header() {
           open ? "max-h-96 py-4 opacity-100" : "max-h-0 py-0 opacity-0"
         }`}
       >
-        <div className="space-y-3 font-bold leading-7 text-gray-700">
-          <p>Shop</p>
-          <p>Combo</p>
-          <p>Brands</p>
-          <p>Categories</p>
-          <p>Merchandise</p>
-          <p>My Account</p>
-          <p>Cart</p>
+        <div className="flex flex-col gap-3 font-bold leading-7">
+          <NavLink to="/shop" className={navItemStyle} onClick={() => setOpen(false)}>Shop</NavLink>
+          <NavLink className={navItemStyle} onClick={() => setOpen(false)}>Combo</NavLink>
+          <NavLink className={navItemStyle} onClick={() => setOpen(false)}>Brands</NavLink>
+          <NavLink className={navItemStyle} onClick={() => setOpen(false)}>Categories</NavLink>
+          <NavLink className={navItemStyle} onClick={() => setOpen(false)}>Merchandise</NavLink>
+          <NavLink to="/login" className={navItemStyle} onClick={() => setOpen(false)}>My Account</NavLink>
+          <NavLink className={navItemStyle} onClick={() => setOpen(false)}>Cart</NavLink>
         </div>
       </div>
     </header>
