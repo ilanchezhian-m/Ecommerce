@@ -128,8 +128,8 @@ export const allAmericanzImages = [
 export const americanzProducts = [
   {
     id: "am-creatine-100",
-    name: "Americanz Creatine Monohydrate",
-    brand: "Americanz",
+    name: "Americanz Creatine Monohydrate-100g",
+    brand: "Americanz Muscles",
     size: "100g",
     price: 699,
     categories: ["creatine"],
@@ -137,8 +137,8 @@ export const americanzProducts = [
   },
   {
     id: "am-creatine-300",
-    name: "Americanz Creatine Monohydrate",
-    brand: "Americanz",
+    name: "Americanz Creatine Monohydrate-300g",
+    brand: "Americanz Muscles",
     size: "300g",
     price: 1599,
     categories: ["creatine"],
@@ -147,7 +147,7 @@ export const americanzProducts = [
   {
     id: "am-eaa-plus",
     name: "Americanz EAA+",
-    brand: "Americanz",
+    brand: "Americanz Muscles",
     size: "Standard",
     price: 1299,
     categories: ["amino-acids", "eaa"],
@@ -155,8 +155,8 @@ export const americanzProducts = [
   },
   {
     id: "am-massgainer-5kg",
-    name: "Americanz Mass Gainer",
-    brand: "Americanz",
+    name: "Americanz Mass Gainer-5kg",
+    brand: "Americanz Muscles",
     size: "5kg",
     price: 2999,
     categories: ["mass-gainer"],
@@ -164,8 +164,8 @@ export const americanzProducts = [
   },
   {
     id: "am-pronit-2kg",
-    name: "Americanz Professional Nitro",
-    brand: "Americanz",
+    name: "Americanz Professional Nitro-2kg",
+    brand: "Americanz Muscles",
     size: "2kg",
     price: 1999,
     categories: ["whey-protein", "protein"],
@@ -173,8 +173,8 @@ export const americanzProducts = [
   },
   {
     id: "am-prowhey-1kg",
-    name: "Americanz Professional Whey Protein",
-    brand: "Americanz",
+    name: "Americanz Professional Whey Protein-1kg",
+    brand: "Americanz Muscles",
     size: "1kg",
     price: 1499,
     categories: ["whey-protein", "protein"],
@@ -182,8 +182,8 @@ export const americanzProducts = [
   },
   {
     id: "am-prowhey-227kg",
-    name: "Americanz Professional Whey Protein",
-    brand: "Americanz",
+    name: "Americanz Professional Whey Protein-2.27kg",
+    brand: "Americanz Muscles",
     size: "2.27kg",
     price: 3199,
     categories: ["whey-protein", "protein"],
@@ -191,8 +191,8 @@ export const americanzProducts = [
   },
   {
     id: "am-isohydro-1kg",
-    name: "Americanz Iso Hydro Protein",
-    brand: "Americanz",
+    name: "Americanz Iso Hydro Protein-1kg",
+    brand: "Americanz Muscles",
     size: "1kg",
     price: 2199,
     categories: ["whey-protein-isolate", "protein"],
@@ -200,8 +200,8 @@ export const americanzProducts = [
   },
   {
     id: "am-isohydro-227kg",
-    name: "Americanz Iso Hydro Protein",
-    brand: "Americanz",
+    name: "Americanz Iso Hydro Protein-2.27kg",
+    brand: "Americanz Muscles",
     size: "2.27kg",
     price: 4499,
     categories: ["whey-protein-isolate", "protein"],
