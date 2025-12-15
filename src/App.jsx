@@ -4,8 +4,7 @@ import { Routes,Route } from 'react-router-dom'
 import Layout from './Components/Layout'
 import Home from './pages/Home'
 import Shop from './pages/Shop'
-import Product from './pages/product'
-import Cart from './pages/cart'
+import Cart from './pages/Cart'
 import Login from './pages/Login'
 
 
@@ -21,8 +20,6 @@ function App() {
     <Route index element ={<Home/>}/>
     
     <Route path="shop" element={<Shop/>}/>
-
-    <Route path ="product" element={<Product/>}/>
 
     <Route path ="login" element={<Login/>}/>
 

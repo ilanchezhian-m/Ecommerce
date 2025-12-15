@@ -1,98 +1,237 @@
-import { useState } from "react";
+import { useMemo, useRef, useState, useEffect } from "react";
 import wavslogo from "../assets/wavslogo.webp";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { products } from "../data/brand/product";
+
+
 
 export default function Header() {
-  const [open, setOpen] = useState(false); // tracks mobile menu open/close
+
+  const [open, setOpen] = useState(false); // mobile menu
+  const [openMenu, setOpenMenu] = useState(null); // "brands" | "categories" | null
+  const navigate = useNavigate();
+  const menuRef = useRef(null);
+ const safeNavigate = (to) => {
+  setOpenMenu(null);
+  setOpen(false);
+  navigate(to);
+};
+
+const closeMenus = () => {
+  setOpenMenu(null);
+  setOpen(false);
+};
 
 
-  const navItemStyle =({isActive}) => isActive ? "text-red-700 font-extrabold": "text-[#4F5055] hover:text-red-600";
+  // Active NavLink style
+  const navItemStyle = ({ isActive }) =>
+    isActive
+      ? "text-red-700 font-extrabold"
+      : "text-[#4F5055] hover:text-red-600";
+
+  // Brands (A–Z)
+  const brands = useMemo(() => {
+    const counts = products.reduce((acc, p) => {
+      acc[p.brand] = true;
+      return acc;
+    }, {});
+    return Object.keys(counts).sort((a, b) => a.localeCompare(b));
+  }, []);
+
+  // Categories (excluding combo if needed)
+  const categories = useMemo(() => {
+    return [...new Set(products.flatMap(p => p.categories))]
+      .sort((a, b) => a.localeCompare(b));
+  }, []);
+
+    const goToBrand = (brand) => {
+      safeNavigate(`/shop?brand=${encodeURIComponent(brand)}`);
+    };
+
+    const goToCategory = (category) => {
+      safeNavigate(`/shop?category=${encodeURIComponent(category)}`);
+    };
+
+  // Click outside to close dropdowns
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setOpenMenu(null);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
 
   return (
     <header className="border-b bg-white">
-      {/* Top red welcome bar */}
+      {/* Top bar */}
       <div className="bg-red-700 py-2">
         <h1 className="text-white font-bold text-center">
           Welcome to Wave Sports Nutrition!
         </h1>
       </div>
 
-      {/* Main header row */}
-      <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-2 gap-6">
+      {/* Header row */}
+      <div className="max-w-6xl mx-auto relative flex items-center justify-between px-4 my-3 gap-6">
         {/* Logo */}
-        <NavLink className={navItemStyle} to="/" >
-          <img
-          src={wavslogo}
-          className="h-20 w-auto"
-          alt="Wave Sports Nutrition logo"
-        /></NavLink>
-        
+        <NavLink to="/">
+          <img src={wavslogo} className="h-12 w-auto" alt="Wave logo" />
+        </NavLink>
 
-        {/* Desktop nav (hidden on small screens) */}
-        <nav className="hidden lg:flex gap-8 font-bold text-lg">
-          <NavLink to="/shop" className={navItemStyle} >Shop</NavLink>
-          <NavLink className={navItemStyle} >Combo</NavLink>
-          <NavLink className={navItemStyle} >Brands</NavLink>
-          <NavLink className={navItemStyle} >Categories</NavLink>
-          <NavLink  className={navItemStyle} >Merchandise</NavLink>
-          <NavLink to ="/login"className={navItemStyle} >My Account</NavLink>
-          <NavLink className={navItemStyle} >Cart</NavLink>
+        {/* Desktop nav */}
+        <nav className="hidden lg:flex gap-8 font-bold text-lg items-center" ref={menuRef}>
+          <NavLink to="/shop" className={navItemStyle} onClick={closeMenus}>
+            Shop
+          </NavLink>
+
+          {/* Combo as category */}
+          <button
+            onClick={() => safeNavigate("/shop?category=combo")}
+            className="text-[#4F5055] hover:text-red-600 font-bold"
+          >
+            Combo
+          </button>
+
+          {/* Brands dropdown */}
+          <div className="relative">
+            <button
+              onClick={() =>
+                setOpenMenu(openMenu === "brands" ? null : "brands")
+              }
+              className="text-[#4F5055] hover:text-red-600 font-bold"
+            >
+              Brands
+            </button>
+
+            {openMenu === "brands" && (
+              <div className="absolute top-full mt-6 left-1/2 -translate-x-1/2 z-50 bg-white border rounded shadow overflow-auto p-4 max-h-64 min-w-max grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                <button
+                  onClick={() => goToBrand("")}
+                  className="block w-full text-left px-3 py-2 hover:bg-gray-50"
+                >
+                  All
+                </button>
+                {brands.map((brand) => (
+                  <button
+                    key={brand}
+                    onClick={() => goToBrand(brand)}
+                    className="block w-full text-left px-3 py-2 hover:bg-gray-50"
+                  >
+                    {brand}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Categories dropdown */}
+          <div className="relative">
+            <button
+              onClick={() =>
+                setOpenMenu(openMenu === "categories" ? null : "categories")
+              }
+              className="text-[#4F5055] hover:text-red-600 font-bold"
+            >
+              Categories
+            </button>
+
+            {openMenu === "categories" && (
+              <div className="absolute top-full mt-6 left-1/2 -translate-x-1/2 z-50 bg-white border rounded shadow overflow-auto p-4 max-h-64 min-w-max grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                <button
+                  onClick={() => navigate("/shop")}
+                  className="block w-full text-left px-3 py-2 hover:bg-gray-50"
+                >
+                  All
+                </button>
+                {categories.map((cat) => (
+                  <button
+                    key={cat}
+                    onClick={() => goToCategory(cat)}
+                    className="block w-full text-left px-3 py-2 hover:bg-gray-50"
+                  >
+                    {cat}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+           <button
+            onClick={() => safeNavigate("/shop?category=merchandise")}
+            className="text-[#4F5055] hover:text-red-600 font-bold"
+          >
+            Merchandise
+          </button>
+
+          <NavLink to="/login" className={navItemStyle} onClick={closeMenus}>
+            My Account
+          </NavLink>
+          <NavLink to="/cart" className={navItemStyle} onClick={closeMenus}>
+            Cart
+          </NavLink>
         </nav>
-
-    
+   {/* MOBILE HAMBURGER */}
         <button
-          className="lg:hidden flex flex-col justify-center items-center h-10 w-10"
-          onClick={() => setOpen((prev) => !prev)}
-          aria-label="Toggle navigation menu"
+          className="lg:hidden text-2xl"
+          onClick={() => setOpen(!open)}
         >
-          <span
-            className={`h-0.5 w-6 bg-gray-800 rounded transition-transform duration-200 ${
-              open ? "rotate-45 translate-y-1.5" : ""
-            }`}
-          />
-          <span
-            className={`h-0.5 w-6 bg-gray-800 rounded my-1 transition-opacity duration-200 ${
-              open ? "opacity-0" : "opacity-100"
-            }`}
-          />
-          <span
-            className={`h-0.5 w-6 bg-gray-800 rounded transition-transform duration-200 ${
-              open ? "-rotate-45 -translate-y-1.5" : ""
-            }`}
-          />
+          ☰
         </button>
       </div>
 
-{/* mobile navbar otpions */}
-      {/* Mobile dropdown menu */}
-      <div
-        className={`lg:hidden bg-white shadow-lg px-6 overflow-hidden transition-all duration-200 ${
-          open ? "max-h-96 py-4 opacity-100" : "max-h-0 py-0 opacity-0"
-        }`}
-      >
-        <div className="flex flex-col gap-3 font-bold leading-7">
-          <NavLink to="/shop" className={navItemStyle} onClick={() => setOpen(false)}>Shop</NavLink>
-          <NavLink className={navItemStyle} onClick={() => setOpen(false)}>Combo</NavLink>
-          <NavLink className={navItemStyle} onClick={() => setOpen(false)}>Brands</NavLink>
-          <NavLink className={navItemStyle} onClick={() => setOpen(false)}>Categories</NavLink>
-          <NavLink className={navItemStyle} onClick={() => setOpen(false)}>Merchandise</NavLink>
-          <NavLink to="/login" className={navItemStyle} onClick={() => setOpen(false)}>My Account</NavLink>
-          <NavLink className={navItemStyle} onClick={() => setOpen(false)}>Cart</NavLink>
+      {/* MOBILE MENU */}
+      {open && (
+        <div className="lg:hidden bg-white border-t shadow px-6 py-4 space-y-4 font-bold flex flex-col overflow-auto">
+          <NavLink to="/shop" onClick={closeMenus}>
+            Shop
+          </NavLink>
+
+          <button className="text-left" onClick={() => goToCategory("combo")}>
+            Combo
+          </button>
+
+          <NavLink to="/merch" onClick={closeMenus}>
+            Merchandise
+          </NavLink>
+
+          {/* Mobile Brands */}
+          <details>
+            <summary className="cursor-pointer">Brands</summary>
+            <div className=" mt-2 space-y-2 flex flex-col h-40 overflow-auto">
+              {brands.map((b) => (
+                <button key={b} onClick={() => goToBrand(b)} className="text-left">
+                  {b}
+                </button>
+              ))}
+            </div>
+          </details>
+
+          {/* Mobile Categories */}
+          <details>
+            <summary className="cursor-pointer">Categories</summary>
+            <div className="mt-2 space-y-2 flex flex-col h-40 overflow-auto">
+              {categories.map((c) => (
+                <button key={c} onClick={() => goToCategory(c)}  className="text-left">
+                  {c}
+                </button>
+              ))}
+            </div>
+          </details>
+
+          <NavLink to="/login" onClick={closeMenus}>
+            My Account
+          </NavLink>
+
+          <NavLink to="/cart" onClick={closeMenus}>
+            Cart
+          </NavLink>
         </div>
-      </div>
+      )}
+
+
+   
     </header>
-
-
-// navlink react router using here 
-
-
-
-
-
-
-
-
-
   );
 }

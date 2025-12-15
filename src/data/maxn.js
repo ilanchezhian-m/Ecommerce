@@ -1,5 +1,6 @@
 // MaxN Product Images from Products/maxn folder
 
+
 // BCAA - 3 images
 import MAXN_BCAA_1 from '../assets/Products/maxn/maxn-bcaa-image1.webp'
 import MAXN_BCAA_2 from '../assets/Products/maxn/maxn-bcaa-image2.webp'
@@ -250,28 +251,30 @@ export const maxnZMA = [MAXN_ZMA_1, MAXN_ZMA_2, MAXN_ZMA_3]
 
 // MaxN Products
 export const maxnProducts = [
-  { id: "maxn-bcaa", name: "MaxN BCAA", brand: "MaxN", size: "Standard", price: 1299, categories: ["amino-acids", "bcaa"], images: maxnBCAA },
-  { id: "maxn-calcium-d3", name: "MaxN Calcium D3", brand: "MaxN", size: "Standard", price: 699, categories: ["vitamins", "supplements"], images: maxnCalciumD3 },
-  { id: "maxn-creatine-mono", name: "MaxN Creatine Monohydrate", brand: "MaxN", size: "Standard", price: 999, categories: ["creatine"], images: maxnCreatineMono },
-  { id: "maxn-fishoil-60", name: "MaxN Fish Oil", brand: "MaxN", size: "60 Capsules", price: 899, categories: ["omega3", "supplements"], images: maxnFishOil },
-  { id: "maxn-insta-tan", name: "MaxN Insta Tan", brand: "MaxN", size: "Standard", price: 799, categories: ["supplements"], images: maxnInstaTan },
-  { id: "maxn-isopro-1kg", name: "MaxN IsoPro Whey Protein Isolate", brand: "MaxN", size: "1kg", price: 2499, categories: ["whey-protein-isolate", "protein"], images: maxnIsoPro1kg },
-  { id: "maxn-isopro-227kg", name: "MaxN IsoPro Whey Protein Isolate", brand: "MaxN", size: "2.27kg", price: 4799, categories: ["whey-protein-isolate", "protein"], images: maxnIsoPro227kg },
-  { id: "maxn-isopro-454kg", name: "MaxN IsoPro Whey Protein Isolate", brand: "MaxN", size: "4.54kg", price: 8999, categories: ["whey-protein-isolate", "protein"], images: maxnIsoPro454kg },
-  { id: "maxn-glutamine-300g", name: "MaxN L-Glutamine", brand: "MaxN", size: "300g", price: 1199, categories: ["amino-acids", "glutamine"], images: maxnGlutamine },
-  { id: "maxn-massgainer-15kg", name: "MaxN Mass Gainer", brand: "MaxN", size: "1.5kg", price: 1299, categories: ["mass-gainer"], images: maxnMassGainer15kg },
-  { id: "maxn-massgainer-27kg", name: "MaxN Mass Gainer", brand: "MaxN", size: "2.7kg", price: 1999, categories: ["mass-gainer"], images: maxnMassGainer27kg },
-  { id: "maxn-massgainer-5kg", name: "MaxN Mass Gainer", brand: "MaxN", size: "5kg", price: 2999, categories: ["mass-gainer"], images: maxnMassGainer5kg },
-  { id: "maxn-mct-oil", name: "MaxN MCT Oil", brand: "MaxN", size: "500ml", price: 1499, categories: ["supplements", "fat-burner"], images: maxnMCTOil },
-  { id: "maxn-multivit-60", name: "MaxN Multivitamin", brand: "MaxN", size: "60 Capsules", price: 799, categories: ["multivitamins", "vitamins"], images: maxnMultivit },
-  { id: "maxn-pocketwhey-1kg", name: "MaxN Pocket Whey", brand: "MaxN", size: "1kg", price: 1899, categories: ["whey-protein", "protein"], images: maxnPocketWhey },
-  { id: "maxn-preworkout", name: "MaxN Pre-Workout", brand: "MaxN", size: "Standard", price: 1799, categories: ["pre-workout", "energy"], images: maxnPreWorkout },
-  { id: "maxn-psyllium", name: "MaxN Psyllium Husk", brand: "MaxN", size: "Standard", price: 599, categories: ["supplements", "fiber"], images: maxnPsylliumHusk },
-  { id: "maxn-taurine-60", name: "MaxN Taurine", brand: "MaxN", size: "60 Capsules", price: 699, categories: ["amino-acids", "supplements"], images: maxnTaurine },
-  { id: "maxn-whey-egg-1kg", name: "MaxN Whey Egg Protein", brand: "MaxN", size: "1kg", price: 1999, categories: ["protein"], images: maxnWheyEggProtein },
-  { id: "maxn-wheyprotein-1kg", name: "MaxN Whey Protein", brand: "MaxN", size: "1kg", price: 1699, categories: ["whey-protein", "protein"], images: maxnWheyProtein1kg },
-  { id: "maxn-wheyprotein-18kg", name: "MaxN Whey Protein", brand: "MaxN", size: "1.8kg", price: 2799, categories: ["whey-protein", "protein"], images: maxnWheyProtein18kg },
-  { id: "maxn-wheyprotein-227kg", name: "MaxN Whey Protein", brand: "MaxN", size: "2.27kg", price: 3499, categories: ["whey-protein", "protein"], images: maxnWheyProtein227kg },
-  { id: "maxn-wheyprotein-445kg", name: "MaxN Whey Protein", brand: "MaxN", size: "4.45kg", price: 5999, categories: ["whey-protein", "protein"], images: maxnWheyProtein445kg },
-  { id: "maxn-zma", name: "MaxN ZMA", brand: "MaxN", size: "Standard", price: 999, categories: ["supplements", "recovery"], images: maxnZMA },
+  { id: "maxn-bcaa", name: "maxn BCAA", brand: "Maxn", size: "Standard", price: 1299, categories: ["amino-acids", "bcaa"], images: maxnBCAA },
+  { id: "maxn-calcium-d3", name: "maxn Calcium D3", brand: "Maxn", size: "Standard", price: 699, categories: ["vitamins", "supplements"], images: maxnCalciumD3 },
+  { id: "maxn-creatine-mono", name: "maxn Creatine Monohydrate", brand: "Maxn", size: "Standard", price: 999, categories: ["creatine"], images: maxnCreatineMono },
+  { id: "maxn-fishoil-60", name: "maxn Fish Oil", brand: "Maxn", size: "60 Capsules", price: 899, categories: ["omega3", "supplements"], images: maxnFishOil },
+  { id: "maxn-insta-tan", name: "maxn Insta Tan", brand: "Maxn", size: "Standard", price: 799, categories: ["supplements"], images: maxnInstaTan },
+  { id: "maxn-isopro-1kg", name: "maxn IsoPro Whey Protein Isolate", brand: "Maxn", size: "1kg", price: 2499, categories: ["whey-protein-isolate", "protein"], images: maxnIsoPro1kg },
+  { id: "maxn-isopro-227kg", name: "maxn IsoPro Whey Protein Isolate", brand: "Maxn", size: "2.27kg", price: 4799, categories: ["whey-protein-isolate", "protein"], images: maxnIsoPro227kg },
+  { id: "maxn-isopro-454kg", name: "maxn IsoPro Whey Protein Isolate", brand: "Maxn", size: "4.54kg", price: 8999, categories: ["whey-protein-isolate", "protein"], images: maxnIsoPro454kg },
+  { id: "maxn-glutamine-300g", name: "maxn L-Glutamine", brand: "Maxn", size: "300g", price: 1199, categories: ["amino-acids", "glutamine"], images: maxnGlutamine },
+  { id: "maxn-massgainer-15kg", name: "maxn Mass Gainer", brand: "Maxn", size: "1.5kg", price: 1299, categories: ["mass-gainer"], images: maxnMassGainer15kg },
+  { id: "maxn-massgainer-27kg", name: "maxn Mass Gainer", brand: "Maxn", size: "2.7kg", price: 1999, categories: ["mass-gainer"], images: maxnMassGainer27kg },
+  { id: "maxn-massgainer-5kg", name: "maxn Mass Gainer", brand: "Maxn", size: "5kg", price: 2999, categories: ["mass-gainer"], images: maxnMassGainer5kg },
+  { id: "maxn-mct-oil", name: "maxn MCT Oil", brand: "Maxn", size: "500ml", price: 1499, categories: ["supplements", "fat-burner"], images: maxnMCTOil },
+  { id: "maxn-multivit-60", name: "maxn Multivitamin", brand: "Maxn", size: "60 Capsules", price: 799, categories: ["multivitamins", "vitamins"], images: maxnMultivit },
+  { id: "maxn-pocketwhey-1kg", name: "maxn Pocket Whey", brand: "Maxn", size: "1kg", price: 1899, categories: ["whey-protein", "protein"], images: maxnPocketWhey },
+  { id: "maxn-preworkout", name: "maxn Pre-Workout", brand: "Maxn", size: "Standard", price: 1799, categories: ["pre-workout", "energy"], images: maxnPreWorkout },
+  { id: "maxn-psyllium", name: "maxn Psyllium Husk", brand: "Maxn", size: "Standard", price: 599, categories: ["supplements", "fiber"], images: maxnPsylliumHusk },
+  { id: "maxn-taurine-60", name: "maxn Taurine", brand: "Maxn", size: "60 Capsules", price: 699, categories: ["amino-acids", "supplements"], images: maxnTaurine },
+  { id: "maxn-whey-egg-1kg", name: "maxn Whey Egg Protein", brand: "Maxn", size: "1kg", price: 1999, categories: ["protein"], images: maxnWheyEggProtein },
+  { id: "maxn-wheyprotein-1kg", name: "maxn Whey Protein", brand: "Maxn", size: "1kg", price: 1699, categories: ["whey-protein", "protein"], images: maxnWheyProtein1kg },
+  { id: "maxn-wheyprotein-18kg", name: "maxn Whey Protein", brand: "Maxn", size: "1.8kg", price: 2799, categories: ["whey-protein", "protein"], images: maxnWheyProtein18kg },
+  { id: "maxn-wheyprotein-227kg", name: "maxn Whey Protein", brand: "Maxn", size: "2.27kg", price: 3499, categories: ["whey-protein", "protein"], images: maxnWheyProtein227kg },
+  { id: "maxn-wheyprotein-445kg", name: "maxn Whey Protein", brand: "Maxn", size: "4.45kg", price: 5999, categories: ["whey-protein", "protein"], images: maxnWheyProtein445kg },
+  { id: "maxn-zma", name: "maxn ZMA", brand: "Maxn", size: "Standard", price: 999, categories: ["supplements", "recovery"], images: maxnZMA },
 ]
+
+
