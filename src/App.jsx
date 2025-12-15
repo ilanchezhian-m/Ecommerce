@@ -4,7 +4,7 @@ import { Routes,Route } from 'react-router-dom'
 import Layout from './Components/Layout'
 import Home from './pages/Home'
 import Shop from './pages/Shop'
-import Cart from './pages/Cart'
+// import Cart from './pages/Cart'
 import Login from './pages/Login'
 
 
@@ -23,7 +23,7 @@ function App() {
 
     <Route path ="login" element={<Login/>}/>
 
-    <Route path ="cart" element={<Cart/>}/>
+    {/* <Route path ="cart" element={<Cart/>}/> */}
     
     </Route>
    </Routes>
