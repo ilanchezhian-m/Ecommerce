@@ -134,7 +134,19 @@ export const americanzProducts = [
     price: 699,
     categories: ["creatine"],
     images: americanz100,
+    flavour:["Mango Madness","cola", "fruit punch" ,"unflavoured "],
+    uses: [
+  "Increase in strength & gain more lean muscle",
+  "Harness the energy of amplified ATP synthesis",
+  "Experience real results & better performance",
+  "Clinically proven & versatile supplement solution",
+  "No bloating or cycling required",
+  "Formulated to cover it all – all killer no filler"
+          ],
+    description:["Americanz Muscles Creatine Monohydrate provides 3g of 100% Creatine Monohydrate- one of the most widely studied supplement ingredients- to help support ATP recycling for explosive movements. Creatine Monohydrate supports muscle building, recovery, performance, strength, and power when used daily, over time, and combined with exercise."]
   },
+
+
   {
     id: "am-creatine-300",
     name: "Americanz Creatine Monohydrate-300g",
@@ -143,7 +155,19 @@ export const americanzProducts = [
     price: 1599,
     categories: ["creatine"],
     images: americanz300,
+     flavour:["Mango Madness","cola" ,"unflavoured "],
+    uses: [
+  "Increase in strength & gain more lean muscle",
+  "Harness the energy of amplified ATP synthesis",
+  "Experience real results & better performance",
+  "Clinically proven & versatile supplement solution",
+  "No bloating or cycling required",
+  "Formulated to cover it all – all killer no filler"
+      ],
+    description:["Americanz Muscles Creatine Monohydrate provides 3g of 100% Creatine Monohydrate- one of the most widely studied supplement ingredients- to help support ATP recycling for explosive movements. Creatine Monohydrate supports muscle building, recovery, performance, strength, and power when used daily, over time, and combined with exercise."]
   },
+
+
   {
     id: "am-eaa-plus",
     name: "Americanz EAA+",
