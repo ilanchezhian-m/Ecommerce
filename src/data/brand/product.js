@@ -10,9 +10,15 @@ import { geneticProducts } from "./genetic";
 import { gncProducts } from "./gnc";
 import { hydeProducts } from "./hyde";
 import { labradaProducts } from "./labrada";
-import { maxnProducts } from "../maxn";
+import { maxnProducts } from "./maxn";
 import { comboProducts } from "../combo/combo";
 import { merchandiseProducts } from "../merchandise/merchandise";
+import { muscletechProducts } from "./muscletech";
+import { prosuppsProducts } from "./prosupps";
+import { onProducts } from "./on";
+import { wellcoreProducts } from "./wellcore";
+import { klrProducts } from "./klr";
+
 
 export const products = [
   ...americanzProducts,
@@ -26,6 +32,11 @@ export const products = [
   ...hydeProducts,
   ...labradaProducts,
   ...maxnProducts,
+  ...muscletechProducts,
+  ...prosuppsProducts,
+  ...onProducts,
+  ...wellcoreProducts,
+  ...klrProducts,
   ...comboProducts,
   ...merchandiseProducts,
 ];

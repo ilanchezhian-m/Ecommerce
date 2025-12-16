@@ -38,6 +38,18 @@ export const dragonProducts = [
     price: 2299,
     categories: ["whey-protein", "protein"],
     images: dragonWheyPhormClassic,
+    flavour: ["Birthday Cake", "Cashew Saffron", "Strawberry White Chocolate"],
+    uses: [
+      "23gm premium whey protein concentrate per serving",
+      "Enhances muscle repair and recovery",
+      "Exotic premium flavor system",
+      "Supports increases in lean muscle mass"
+    ],
+    description: [
+      "Dragon Pharma WheyPhorm Classic is the premium choice for meeting your daily protein needs.",
+      "Containing 23gm of 100% pure premium whey protein concentrate per serving, you can focus more on your next workout or next task and not on the quality of your protein.",
+      "We worked tirelessly to bring you exotic flavors to satisfy even the most discerning of taste buds."
+    ]
   },
   {
     id: "dragon-ultimate-gainer-5kg",
@@ -47,5 +59,17 @@ export const dragonProducts = [
     price: 2899,
     categories: ["mass-gainer"],
     images: dragonUltimateMassGainer,
+    uses: [
+      "Enhances muscle repair and recovery",
+      "Exotic premium flavor system",
+      "Supports increases in muscle mass",
+      "MassPhorm addresses the needs of the ectomorph hard-gainer with a well-rounded profile",
+      "MCTs for lean muscle and metabolism support and enzymes for optimal digestion"
+    ],
+    description: [
+      "Dragon Pharma Massphorm was created to be the most effective, highest quality lean muscle gaining formulation on the market.",
+      "Some have faster metabolisms and struggle to put on quality muscle mass—Massphorm targets this ectomorph challenge head on.",
+      "Delivers a balanced matrix to support muscle size, weight gain, and recovery for hard gainers."
+    ]
   },
 ]

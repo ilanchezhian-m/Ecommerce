@@ -50,6 +50,23 @@ export const ansProducts = [
     price: 4299,
     categories: ["whey-protein-isolate", "protein"],
     images: ansIsoHydroWheyIsolate227kg,
+    flavour: ["Peanut Butter Chocolate", "Cafe Mocha", "Cookies & Cream", "Creamy Vanilla", "Milk Chocolate", "Strawberry"],
+    uses: [
+      "100% pure hydrolyzed whey protein isolate for fastest absorption",
+      "Rich naturally occurring BCAA & EAA content for muscle growth and recovery",
+      "Zero lactose, pre-digested with enzymes for easy digestion",
+      "Supports rapid muscle recovery and lean muscle development",
+      "Award-winning flavors for a great taste experience"
+    ],
+    description: [
+      "The ultimate whey isolate protein designed to optimize total muscle recovery and growth.",
+      "Provides the purest and fastest-absorbing source of protein available.",
+      "Features award-winning flavors that keep you coming back for more.",
+      "Made using only the highest quality ingredients and is gluten-free, lactose-free, and banned substance free.",
+      "100% hydrolyzed whey protein isolate ensures rapid absorption and superior digestion.",
+      "Naturally occurring rich BCAA content helps trigger maximum muscle growth and faster recovery.",
+      "Zero lactose and pre-digested formula makes it easy on the stomach."
+    ]
   },
   {
     id: "ans-perf-isopro-2kg",
@@ -59,6 +76,20 @@ export const ansProducts = [
     price: 2899,
     categories: ["whey-protein-isolate", "protein"],
     images: ansPerformanceIsoPro,
+    flavour: ["Milk Chocolate", "Creamy Vanilla"],
+    uses: [
+      "25g protein",
+      "Cold Processed Membrane Filtered Whey",
+      "No Added Aminos, Creatine, or Creamers",
+      "100% Isolate Protein Source",
+      "Incredible Taste & Mixability",
+      "No Artificial Colors & Gluten Free"
+    ],
+    description: [
+      "ANS Performance ISO-PRO, is a premium protein powder that boasts exceptional quality and efficacy.",
+      "Each serving of this product contains a generous 25g of protein, derived from a blend of 100% whey protein isolate and hydrolyzed whey protein.",
+      "The protein powder is meticulously crafted using a cold-processed membrane filtration technique, ensuring that it is free from added aminos, creatine, or creamers."
+    ]
   },
   {
     id: "ans-perf-mass-2.5kg",
@@ -68,5 +99,14 @@ export const ansProducts = [
     price: 2199,
     categories: ["mass-gainer"],
     images: ansPerformanceMass,
+    uses: [
+      "N-MASS is an advanced mass gainer formula for hard gainers",
+      "Each serving contains 1300 calories, 55g of protein, 250g of carbohydrates and 9g of healthy fat sources",
+      "Features Appelin™, a natural digestive support complex to help absorption and support appetite"
+    ],
+    description: [
+      "N-MASS™ provides a convenient way to consume 1,300 high quality calories derived from 55g protein, 250g of carbohydrates and 9g fat; with added creatine monohydrate and Appelin™ in every serving.",
+      "Nothing will fuel your workout recovery and trigger muscle growth faster."
+    ]
   },
 ]

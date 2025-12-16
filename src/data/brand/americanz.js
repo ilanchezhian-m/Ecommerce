@@ -176,6 +176,23 @@ export const americanzProducts = [
     price: 1299,
     categories: ["amino-acids", "eaa"],
     images: americanzEAA,
+    uses: [
+            "Enhance exercise performance",
+            "Burn fat",
+            "Quick recovery",
+            "Build muscle mass",
+            "Repair damaged muscle tissue",
+            "Get lean body"
+          ],
+ description: [
+          "EAA stands for essential amino acids, which cannot be synthesized by the body and must be consumed through diet.",
+          "EAA supplements offer multiple performance and health benefits for active individuals.",
+          "EAA + Nootropics 8:1:1 provides a convenient and effective way to supply your body with essential amino acids.",
+          "This formula supports maximum muscle recovery and overall workout performance.",
+          "Each serving delivers all essential amino acids required for muscle protein synthesis.",
+          "It enhances recovery, reduces muscle soreness, and helps prevent muscle protein breakdown."
+        ]
+
   },
   {
     id: "am-massgainer-5kg",
@@ -185,6 +202,20 @@ export const americanzProducts = [
     price: 2999,
     categories: ["mass-gainer"],
     images: americanzMassGainer,
+    flavour:["Chocolate Caramel ","Saffron Ice-Cream"],
+     uses:["60g of protein",
+        "52g of Healthy Carbohydrates",
+        "5.5g BCAA",
+        "6.6g Omega Mass",
+        "7.5 g Creatine",
+        "570 Kcal Energy"],
+    description:[
+          "Premium Mass Gainer: Formulated with high-quality ingredients to support muscle growth and bulk.",
+        " Protein Complex: Contains whey protein concentrate, Isolac whey protein isolate, Optipep hydrolysed whey protein isolate, and PeptoPro hydrolysed casein for optimal muscle recovery.",
+        "  Comprehensive Nutrition: Includes a carbohydrate complex, creatine monohydrate, taurine, D-aspartic acid, and more for enhanced performance and mass gain.",
+        "  Easy to Use: Mix 2 scoops (120g) with 200 ml of water or skimmed milk, and consume 1 serving three times daily for best results.",
+         " Safety and Quality: Not for pregnant or nursing women. Consult a doctor if on medication. Store properly and keep out of reach of children."
+    ],
   },
   {
     id: "am-pronit-2kg",
@@ -194,6 +225,22 @@ export const americanzProducts = [
     price: 1999,
     categories: ["whey-protein", "protein"],
     images: americanzProNitro,
+        uses: [
+              "24g of protein per serving",
+              "11g EAAs",
+              "300mg T-Boost Matrix",
+              "3g creatine",
+              "Zero added sugar",
+              "Gluten-free"
+            ],
+
+    description: [
+                "Helps improve muscle recovery with a unique recovery blend designed for intense training.",
+                "Includes taurine and essential amino acids that support muscle repair after workouts.",
+                "Reduces muscle soreness, allowing you to train harder and stay consistent.",
+                "Formulated to support strength, performance, and faster recovery.",
+                "Recognized as one of the best whey protein options in India for recovery-focused nutrition."
+              ],
   },
   {
     id: "am-prowhey-1kg",
@@ -203,6 +250,20 @@ export const americanzProducts = [
     price: 1499,
     categories: ["whey-protein", "protein"],
     images: americanzProWhey1kg,
+    uses: [
+          "Lean muscle growth",
+          "Digestive enzymes",
+          "Added multi-vitamin",
+          "Added immunity booster",
+          "Zero added sugar",
+          "Gluten-free"
+        ],
+    description: [
+          "Bodybuilders: Tailored to support intense muscle gain efforts, Professional Protein is the ideal post-workout recovery aid for serious bodybuilders.",
+          "Athletes: Designed for athletes seeking optimal performance and faster recovery after every workout.",
+          "Health-Conscious Individuals: Ideal for those looking to supplement their diet with high-quality protein to support overall health and muscle maintenance."
+                ],
+
   },
   {
     id: "am-prowhey-227kg",
@@ -212,6 +273,19 @@ export const americanzProducts = [
     price: 3199,
     categories: ["whey-protein", "protein"],
     images: americanzProWhey227kg,
+     uses: [
+          "Lean muscle growth",
+          "Digestive enzymes",
+          "Added multi-vitamin",
+          "Added immunity booster",
+          "Zero added sugar",
+          "Gluten-free"
+        ],
+    description: [
+          "Bodybuilders: Tailored to support intense muscle gain efforts, Professional Protein is the ideal post-workout recovery aid for serious bodybuilders.",
+          "Athletes: Designed for athletes seeking optimal performance and faster recovery after every workout.",
+          "Health-Conscious Individuals: Ideal for those looking to supplement their diet with high-quality protein to support overall health and muscle maintenance."
+                ],
   },
   {
     id: "am-isohydro-1kg",
@@ -221,15 +295,45 @@ export const americanzProducts = [
     price: 2199,
     categories: ["whey-protein-isolate", "protein"],
     images: americanzIsoHydro1kg,
+     uses: [
+          "100% Ultra Whey Protein",
+          "Best Recovery Formula",
+          "Ultra Fast Absorption",
+          "Fuels Strength & Performance",
+          "Zero Added Sugar",
+          "Gluten-Free"
+        ],
+   description: [
+        "AM Professional ISO Hydro Protein by Americanz Muscles is the perfect addition to any serious bodybuilder’s diet and training program.",
+        "Get stronger and leaner muscles faster with this innovative supplement.",
+        "Take your workout to the next level with AM Professional ISO Hydro Protein.",
+        "This supplement is designed to give you a pre-digested pure protein source, perfect for bodybuilders looking to gain lean muscle mass.",
+        "Our product contains only the highest quality proteins, ensuring that you get the best results from your routine."
+      ],
   },
   {
-    id: "am-isohydro-227kg",
+    id: "am-isohydro-2.27kg",
     name: "Americanz Iso Hydro Protein-2.27kg",
     brand: "Americanz Muscles",
     size: "2.27kg",
     price: 4499,
     categories: ["whey-protein-isolate", "protein"],
     images: americanzIsoHydro227kg,
+    uses: [
+          "100% Ultra Whey Protein",
+          "Best Recovery Formula",
+          "Ultra Fast Absorption",
+          "Fuels Strength & Performance",
+          "Zero Added Sugar",
+          "Gluten-Free"
+        ],
+   description: [
+        "AM Professional ISO Hydro Protein by Americanz Muscles is the perfect addition to any serious bodybuilder’s diet and training program.",
+        "Get stronger and leaner muscles faster with this innovative supplement.",
+        "Take your workout to the next level with AM Professional ISO Hydro Protein.",
+        "This supplement is designed to give you a pre-digested pure protein source, perfect for bodybuilders looking to gain lean muscle mass.",
+        "Our product contains only the highest quality proteins, ensuring that you get the best results from your routine."
+      ],
   },
 ]
 

@@ -173,6 +173,16 @@ export const avvatarProducts = [
     price: 2299,
     categories: ["whey-protein-isolate", "protein"],
     images: avvatarIsoRich1kg,
+    flavour: ["Belgium Chocolate", "Malai Kulfi"],
+    uses: [
+      "100% Natural Flavours",
+      "Made From 100% Cow Milk"
+    ],
+    description: [
+      "Avvatar Whey Protein is crafted with only the finest natural ingredients and without any artificial colours and fillers.",
+      "Avvatar Whey protein is made from fresh cow's milk, 100% Vegetarian, and manufactured with multiple stringent quality tests.",
+      "Avvatar Isorich Protein is packed with 29 GMS protein per scoop. The primary source is whey protein isolate which is loaded with health-boosting bioactive compounds along with natural phospholipids for quick recovery and sustained results!"
+    ]
   },
   {
     id: "avv-isorich-2kg",
@@ -182,6 +192,16 @@ export const avvatarProducts = [
     price: 3999,
     categories: ["whey-protein-isolate", "protein"],
     images: avvatarIsoRich2kg,
+    flavour: ["Belgium Chocolate", "Malai Kulfi"],
+    uses: [
+      "100% Natural Flavours",
+      "Made From 100% Cow Milk"
+    ],
+    description: [
+      "Avvatar Whey Protein is crafted with only the finest natural ingredients and without any artificial colours and fillers.",
+      "Avvatar Whey protein is made from fresh cow's milk, 100% Vegetarian, and manufactured with multiple stringent quality tests.",
+      "Avvatar Isorich Protein is packed with 29 GMS protein per scoop. The primary source is whey protein isolate which is loaded with health-boosting bioactive compounds along with natural phospholipids for quick recovery and sustained results!"
+    ]
   },
   {
     id: "avv-isorich-4kg",
@@ -191,6 +211,16 @@ export const avvatarProducts = [
     price: 7299,
     categories: ["whey-protein-isolate", "protein"],
     images: avvatarIsoRich4kg,
+    flavour: ["Belgium Chocolate", "Malai Kulfi"],
+    uses: [
+      "100% Natural Flavours",
+      "Made From 100% Cow Milk"
+    ],
+    description: [
+      "Avvatar Whey Protein is crafted with only the finest natural ingredients and without any artificial colours and fillers.",
+      "Avvatar Whey protein is made from fresh cow's milk, 100% Vegetarian, and manufactured with multiple stringent quality tests.",
+      "Avvatar Isorich Protein is packed with 29 GMS protein per scoop. The primary source is whey protein isolate which is loaded with health-boosting bioactive compounds along with natural phospholipids for quick recovery and sustained results!"
+    ]
   },
   {
     id: "avv-musclegainer-2kg",
@@ -200,6 +230,19 @@ export const avvatarProducts = [
     price: 1799,
     categories: ["mass-gainer"],
     images: avvatarMuscleGainer2kg,
+    uses: [
+      "Avvatar Mass Gainer Belgian Chocolate Protein is packed with 21.5 GMS protein and 63.5 GMS carbohydrates per 100 GMS scoop",
+      "Unique Blend Of Whey Protein Isolate & Concentrate",
+      "Our unique blend is carefully formulated to provide fast-absorbing whey protein isolate for rapid muscle recovery, along with the sustained-release benefits of whey protein concentrate for prolonged nourishment"
+    ],
+    description: [
+      "Natural Flavours",
+      "Avvatar Whey Protein is crafted with only the finest natural ingredients and without any artificial colours and fillers.",
+      "Made From 100% Cow Milk",
+      "Avvatar Whey protein is 100% Vegetarian, made from fresh cow's milk, and manufactured with multiple stringent quality tests.",
+      "100% Truly Vegetarian",
+      "Distinguishing ourselves from others, we use microbial enzymes instead of non-veg rennet in our protein powders. This deliberate choice allows you to consume our product with complete peace of mind."
+    ]
   },
   {
     id: "avv-musclegainer-4kg",
@@ -209,6 +252,19 @@ export const avvatarProducts = [
     price: 3199,
     categories: ["mass-gainer"],
     images: avvatarMuscleGainer4kg,
+    uses: [
+      "Avvatar Mass Gainer Belgian Chocolate Protein is packed with 21.5 GMS protein and 63.5 GMS carbohydrates per 100 GMS scoop",
+      "Unique Blend Of Whey Protein Isolate & Concentrate",
+      "Our unique blend is carefully formulated to provide fast-absorbing whey protein isolate for rapid muscle recovery, along with the sustained-release benefits of whey protein concentrate for prolonged nourishment"
+    ],
+    description: [
+      "Natural Flavours",
+      "Avvatar Whey Protein is crafted with only the finest natural ingredients and without any artificial colours and fillers.",
+      "Made From 100% Cow Milk",
+      "Avvatar Whey protein is 100% Vegetarian, made from fresh cow's milk, and manufactured with multiple stringent quality tests.",
+      "100% Truly Vegetarian",
+      "Distinguishing ourselves from others, we use microbial enzymes instead of non-veg rennet in our protein powders. This deliberate choice allows you to consume our product with complete peace of mind."
+    ]
   },
   {
     id: "avv-perfwhey-1kg",
@@ -218,6 +274,19 @@ export const avvatarProducts = [
     price: 1699,
     categories: ["whey-protein", "protein"],
     images: avvatarPerformanceWhey1kg,
+    flavour: ["Belgium Chocolate", "Cold Coffee", "Malai Kulfi"],
+    uses: [
+      "100% Natural Flavours",
+      "Made From 100% Cow Milk",
+      "100% Truly Vegetarian"
+    ],
+    description: [
+      "Avvatar 100% Performance Whey Protein is rich in essential amino acids, which help in the muscle building process.",
+      "Due to the freshness of the raw whey and other ingredients used in making of all Avvatar products, Avvatar 100% Performance Whey Protein provides you with rapid absorption without using any artificially added digestives.",
+      "Avvatar Whey Protein is crafted with only the finest natural ingredients and without any artificial colours and fillers.",
+      "Avvatar Whey protein is made from fresh cow's milk, 100% Vegetarian, and manufactured with multiple stringent quality tests.",
+      "Distinguishing ourselves from others, we use microbial enzymes instead of non-veg rennet in making our protein powders hence making our protein products vegetarian in the true sense."
+    ]
   },
   {
     id: "avv-perfwhey-2kg",
@@ -227,6 +296,19 @@ export const avvatarProducts = [
     price: 2999,
     categories: ["whey-protein", "protein"],
     images: avvatarPerformanceWhey2kg,
+    flavour: ["Belgium Chocolate", "Cold Coffee", "Malai Kulfi"],
+    uses: [
+      "100% Natural Flavours",
+      "Made From 100% Cow Milk",
+      "100% Truly Vegetarian"
+    ],
+    description: [
+      "Avvatar 100% Performance Whey Protein is rich in essential amino acids, which help in the muscle building process.",
+      "Due to the freshness of the raw whey and other ingredients used in making of all Avvatar products, Avvatar 100% Performance Whey Protein provides you with rapid absorption without using any artificially added digestives.",
+      "Avvatar Whey Protein is crafted with only the finest natural ingredients and without any artificial colours and fillers.",
+      "Avvatar Whey protein is made from fresh cow's milk, 100% Vegetarian, and manufactured with multiple stringent quality tests.",
+      "Distinguishing ourselves from others, we use microbial enzymes instead of non-veg rennet in making our protein powders hence making our protein products vegetarian in the true sense."
+    ]
   },
   {
     id: "avv-wheyprotein-2kg",
@@ -236,6 +318,19 @@ export const avvatarProducts = [
     price: 2799,
     categories: ["whey-protein", "protein"],
     images: avvatarWheyProtein2kg,
+    flavour: ["Belgium Chocolate", "Chocolate Hazelnut", "Malai Kulfi", "Cafe Mocha", "Caramel Creame"],
+    uses: [
+      "Unique Blend Of Whey Protein Isolate & Concentrate",
+      "Our unique blend is carefully formulated to provide fast-absorbing whey protein isolate for rapid muscle recovery, along with the sustained-release benefits of whey protein concentrate for prolonged nourishment.",
+      "100% Natural Flavours",
+      "Avvatar Whey Protein is crafted with only the finest natural ingredients and without any artificial colours and fillers."
+    ],
+    description: [
+      "Made From 100% Cow Milk",
+      "Avvatar Whey protein is made from fresh cow's milk, 100% Vegetarian, and manufactured with multiple stringent quality tests.",
+      "100% Truly Vegetarian",
+      "Distinguishing ourselves from others, we use microbial enzymes instead of non-veg rennet in making our protein powders hence making our protein products vegetarian in the true sense."
+    ]
   },
   {
     id: "avv-wheyprotein-4kg",
@@ -245,5 +340,18 @@ export const avvatarProducts = [
     price: 4999,
     categories: ["whey-protein", "protein"],
     images: avvatarWheyProtein4kg,
+    flavour: ["Belgium Chocolate", "Chocolate Hazelnut", "Malai Kulfi", "Cafe Mocha", "Caramel Creame"],
+    uses: [
+      "Unique Blend Of Whey Protein Isolate & Concentrate",
+      "Our unique blend is carefully formulated to provide fast-absorbing whey protein isolate for rapid muscle recovery, along with the sustained-release benefits of whey protein concentrate for prolonged nourishment.",
+      "100% Natural Flavours",
+      "Avvatar Whey Protein is crafted with only the finest natural ingredients and without any artificial colours and fillers."
+    ],
+    description: [
+      "Made From 100% Cow Milk",
+      "Avvatar Whey protein is made from fresh cow's milk, 100% Vegetarian, and manufactured with multiple stringent quality tests.",
+      "100% Truly Vegetarian",
+      "Distinguishing ourselves from others, we use microbial enzymes instead of non-veg rennet in making our protein powders hence making our protein products vegetarian in the true sense."
+    ]
   },
 ]

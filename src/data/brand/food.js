@@ -22,5 +22,15 @@ export const foodProducts = [
     price: 599,
     categories: ["multivitamins", "vitamins"],
     images: foodMultivitamin,
+    uses: [
+      "Boosted Immunity: Our MultiVitamins pack immunity-boosting micronutrients to shield against oxidative stress and cellular damage",
+      "Faster Recovery: It delivers an antioxidant-rich blend to combat inflammation and accelerate recovery",
+      "Elevated Stamina: It offers 100% RDA of vital nutrients in one tablet, powering your energy and stamina all day"
+    ],
+    description: [
+      "Fuel your day with Foodstrong’s multivitamin—100% daily essential vitamins and minerals.",
+      "Boosts immunity, fights oxidative stress, and speeds recovery for sustained energy and stamina.",
+      "Ideal for athletes and active lifestyles."
+    ]
   },
 ]

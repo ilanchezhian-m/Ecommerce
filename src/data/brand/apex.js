@@ -122,6 +122,19 @@ export const apexProducts = [
     price: 1899,
     categories: ["whey-protein", "protein"],
     images: apex1Whey2lbs,
+    flavour: ["Vanilla", "Blueberry Yogurt", "Dark Chocolate Orange", "Iced Espresso", "Mango Cheesecake", "Swiss Triple Chocolate", "White Chocolate Raspberry"],
+    uses: [
+      "Premium Grass-Fed Whey Blend",
+      "Complete Muscle Support",
+      "Balanced Wellness Formula",
+      "Delicious and Rich flavors",
+      "European Quality & Safety"
+    ],
+    description: [
+      "Optimum blend: Grass-Fed Finer Whey granules, made & formulated IN EU using best European flavouring. No Guar & Xanthan Gum is used to provide a quality that your body will remember!",
+      "Powerful Whey Formula: Our whey blend features a combination of Concentrate 80 (60%) and Isolate 86 (40%), enriched with digestive enzymes for optimal absorption and utilization.",
+      "Fuel for your muscles: 1 Whey amps muscle growth, helps to recover quickly, supports strength training, and reduces post-workout muscle soreness."
+    ]
   },
   {
     id: "apex-1whey-4lbs",
@@ -131,6 +144,19 @@ export const apexProducts = [
     price: 3499,
     categories: ["whey-protein", "protein"],
     images: apex1Whey4lbs,
+    flavour: ["Vanilla", "Blueberry Yogurt", "Dark Chocolate Orange", "Iced Espresso", "Mango Cheesecake", "Swiss Triple Chocolate", "White Chocolate Raspberry"],
+    uses: [
+      "Premium Grass-Fed Whey Blend",
+      "Complete Muscle Support",
+      "Balanced Wellness Formula",
+      "Delicious and Rich flavors",
+      "European Quality & Safety"
+    ],
+    description: [
+      "Optimum blend: Grass-Fed Finer Whey granules, made & formulated IN EU using best European flavouring. No Guar & Xanthan Gum is used to provide a quality that your body will remember!",
+      "Powerful Whey Formula: Our whey blend features a combination of Concentrate 80 (60%) and Isolate 86 (40%), enriched with digestive enzymes for optimal absorption and utilization.",
+      "Fuel for your muscles: 1 Whey amps muscle growth, helps to recover quickly, supports strength training, and reduces post-workout muscle soreness."
+    ]
   },
   {
     id: "apex-creatine-300g",
@@ -140,6 +166,19 @@ export const apexProducts = [
     price: 1299,
     categories: ["creatine"],
     images: apexCreatineMono,
+    uses: [
+      "Premium German Quality",
+      "Advanced 200 Mesh Micronization",
+      "Optimize Workout Efficiency",
+      "Helps Boost ATP Production",
+      "Pure Vegetarian Source",
+      "Optimal Purity & Effectiveness"
+    ],
+    description: [
+      "Premium German Quality creatine monohydrate with advanced 200 mesh micronization for superior absorption.",
+      "Optimizes workout efficiency and helps boost ATP production for enhanced performance.",
+      "Pure vegetarian source ensuring optimal purity and effectiveness."
+    ]
   },
   {
     id: "apex-glutapure-300g",
@@ -149,6 +188,19 @@ export const apexProducts = [
     price: 1499,
     categories: ["amino-acids", "glutamine"],
     images: apexGlutapure,
+    uses: [
+      "Premium Quality L-Glutamine",
+      "Helps maintain Immune & Digestive Health",
+      "Assists in Cellular Health",
+      "Certified for high standards of safety and quality",
+      "Vegetarian-Friendly"
+    ],
+    description: [
+      "Can Be used By Men & Women",
+      "The highest Bio available Form for Cellular Digestion forming an essential Building block",
+      "Helps Aid your body's immune and digestive systems",
+      "May help Avoid Stress & Fatigue, both cellular and muscular"
+    ]
   },
   {
     id: "apex-isowhey-2lbs",
@@ -158,6 +210,20 @@ export const apexProducts = [
     price: 2199,
     categories: ["whey-protein-isolate", "protein"],
     images: apexIsoWhey2lbs,
+    flavour: ["Chocolate Hazelnut", "Italian Coffee Cream", "Strawberry Yogurt", "White Chocolate Almond"],
+    uses: [
+      "Premium Grass-Fed Whey Isolate",
+      "Optimal Amino Acid Composition",
+      "Advanced Protein Formula",
+      "Irresistible Flavor with Digestive Support",
+      "Holistic Benefits",
+      "Certified Quality"
+    ],
+    description: [
+      "Isolate Whey Protein: Crafted with grass-fed whey protein powder sourced from Europe, our premium formula delivers 30g of protein per serving, ensuring you get the highest quality fuel for your muscles.",
+      "Amino Acid Profile: With a blend of 15g of essential amino acids (EAA) and 8g of branched-chain amino acids (BCAA) per scoop, it provides the optimal amino acid profile to support muscle growth, recovery, and performance.",
+      "Protein Powerhouse: Whey 2 Isolate utilizes Isolate 86 – 75% and Hydrolyzed 90 – 25% to maximize protein absorption. Plus, with less than 1g of carbs, fat, and sugar per serving, you can enjoy a lean protein source without any unnecessary additives."
+    ]
   },
   {
     id: "apex-isowhey-4lbs",
@@ -167,6 +233,20 @@ export const apexProducts = [
     price: 3999,
     categories: ["whey-protein-isolate", "protein"],
     images: apexIsoWhey4lbs,
+    flavour: ["Chocolate Hazelnut", "Italian Coffee Cream", "Strawberry Yogurt", "White Chocolate Almond"],
+    uses: [
+      "Premium Grass-Fed Whey Isolate",
+      "Optimal Amino Acid Composition",
+      "Advanced Protein Formula",
+      "Irresistible Flavor with Digestive Support",
+      "Holistic Benefits",
+      "Certified Quality"
+    ],
+    description: [
+      "Isolate Whey Protein: Crafted with grass-fed whey protein powder sourced from Europe, our premium formula delivers 30g of protein per serving, ensuring you get the highest quality fuel for your muscles.",
+      "Amino Acid Profile: With a blend of 15g of essential amino acids (EAA) and 8g of branched-chain amino acids (BCAA) per scoop, it provides the optimal amino acid profile to support muscle growth, recovery, and performance.",
+      "Protein Powerhouse: Whey 2 Isolate utilizes Isolate 86 – 75% and Hydrolyzed 90 – 25% to maximize protein absorption. Plus, with less than 1g of carbs, fat, and sugar per serving, you can enjoy a lean protein source without any unnecessary additives."
+    ]
   },
   {
     id: "apex-kollage-arginine",
@@ -176,6 +256,19 @@ export const apexProducts = [
     price: 1799,
     categories: ["amino-acids", "collagen"],
     images: apexKollageArginine,
+    uses: [
+      "Ready-to-Drink Collagen: Liquid collagen fortified with Biotin, Hyaluronic Acid & Vitamin C",
+      "Made with Mohai Ignes Mineral Water: Naturally rich in pure minerals and vitamins",
+      "Fast Absorption: Liquid form ensures rapid cellular uptake for visible results",
+      "Beauty & Wellness Support: Promotes glowing skin, stronger hair & nails, and joint flexibility",
+      "Supports Gut Health & Recovery: Helps improve digestion and promotes restful recovery when taken before bed"
+    ],
+    description: [
+      "Apex Vitals KOLLAGE'N is a premium ready-to-drink liquid collagen supplement crafted in Europe, enriched with Biotin, Hyaluronic Acid, Vitamin C, and infused with a refreshing Wild Berries flavour.",
+      "Made with Mohai Ignes mineral water, it delivers a pure source of essential minerals and vitamins for holistic wellness.",
+      "Designed for faster cellular absorption, it supports healthy skin, strong hair and nails, and helps reduce joint and muscle stiffness.",
+      "Its unique formulation also promotes gut health and restful recovery, especially when taken before bedtime."
+    ]
   },
   {
     id: "apex-path2recovery-orange",
@@ -185,6 +278,18 @@ export const apexProducts = [
     price: 1599,
     categories: ["recovery", "post-workout"],
     images: apexPath2RecoveryOrange,
+    uses: [
+      "Holistic Hydration & Recovery: Supports strength, endurance, and post-workout recovery",
+      "Sustained Energy Formula: Includes Vitargo, Fructose, and Palatinose for long-lasting energy",
+      "Muscle Support & Strength: Enriched with Creatine, BCAA, L-Glutamine, L-Taurine, and L-Arginine",
+      "Refreshing Tangy Orange Flavour: Clean, citrusy taste for an enjoyable hydration experience"
+    ],
+    description: [
+      "Apex Vitals Path 2 Recovery is a scientifically formulated hydration and recovery supplement designed to fuel your body before, during, and after workouts.",
+      "It combines advanced carbohydrate sources like Vitargo, Fructose, and Palatinose for sustained energy, along with key recovery ingredients such as Creatine, BCAAs, L-Glutamine, L-Taurine, and L-Arginine to enhance strength, reduce fatigue, and support muscle repair.",
+      "Crafted in a tangy orange flavour, it delivers a refreshing, smooth taste that makes every sip enjoyable.",
+      "Produced in GMP and ISO-certified facilities under strict quality standards (EFSA, FDA, FSSAI), it ensures performance, purity, and effectiveness for athletes and fitness enthusiasts alike."
+    ]
   },
   {
     id: "apex-path2recovery-glutamine",
@@ -194,5 +299,16 @@ export const apexProducts = [
     price: 1599,
     categories: ["recovery", "glutamine"],
     images: apexPath2RecoveryGlutamine,
+    uses: [
+      "Made in Europe",
+      "Transportable Carbs (Eg: Glucose and fructose, maltodextrin and fructose) are more effectively absorbed and linked to fewer GI problems",
+      "Natural Glycogen Recovery Formula For Any Sportsperson"
+    ],
+    description: [
+      "FAST-MEDIUM-SLOW energy release formula",
+      "Best for athletes with more endurance & Performance",
+      "Helps to Reduce Soreness & energy crash",
+      "Aids Longer Workout / Sports Sessions with glycogen restoration"
+    ]
   },
 ]
