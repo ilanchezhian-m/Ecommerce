@@ -1,9 +1,5 @@
 // overall one component for the entire product descritpipkn
 
-
-
-
-
 import { useParams } from "react-router-dom";
 import { products } from "../data/brand/product";
 import { useState } from "react";
