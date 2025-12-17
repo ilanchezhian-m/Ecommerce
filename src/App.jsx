@@ -8,6 +8,7 @@ import Shop from './pages/Shop'
 import Login from './pages/Login'
 import ProductDetails from './Components/ProductDetails'
 import Notfound from './pages/Notfound'
+import ComboProductDetails from './Components/ComboProductDetails'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 
     <Route path ="login" element={<Login/>}/>
     <Route path ="product/:id" element={<ProductDetails/>}/>
+   <Route path="combo/:id" element={<ComboProductDetails />} />
 
     {/* <Route path ="cart" element={<Cart/>}/> */}
     

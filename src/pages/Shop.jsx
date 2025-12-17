@@ -100,6 +100,7 @@ export default function Shop() {
               name={item.name}
               price={item.price}
               images={item.images}
+              type={item.type}
             />
           ))}
         </div>

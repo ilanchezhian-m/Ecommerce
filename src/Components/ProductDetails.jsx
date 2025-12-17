@@ -1,10 +1,11 @@
-// overall one component for the entire product descritpipkn
+// overall one component for the entire product descritoipkn
 
 import { useParams } from "react-router-dom";
 import { products } from "../data/brand/product";
 import { useState } from "react";
 
 export default function ProductDetails() {
+  
   const { id } = useParams();
 
   const product = products.find(p => p.id === id);

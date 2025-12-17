@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 
-export default function ProductCard({ id, name, price, images }) {
+export default function ProductCard({ id, name, price, images ,type }) {
+
+  const link = type === "combo" ? `/combo/${id}` : `/product/${id}`;
+
   return (
-    <Link to={`/product/${id}`}>
-      <div className="p-3 shadow-sm hover:shadow-md transition cursor-pointer flex flex-col max-w-xs">
+    <Link to={link}>
+      <div className="p-3 lg:h-80 shadow-sm hover:shadow-md transition cursor-pointer flex flex-col max-w-xs">
 
         {/* Product Image */}
-        <div className="w-full lg:h-60 flex items-center justify-center mb-4 bg-gray-50 rounded-md">
+        <div className="w-full lg:h-50 flex items-center justify-center mb-4  rounded-md">
           <img 
             src={images[0]} 
             alt={name} 
@@ -23,7 +26,7 @@ export default function ProductCard({ id, name, price, images }) {
         <p className="text-red-600 font-bold text-xs lg:text-lg mt-auto text-center">
           ₹{price}
         </p>
-
+{/* console.log("CARD TYPE:", type); */}
       </div>
     </Link>
   );

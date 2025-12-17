@@ -21,26 +21,29 @@ import { klrProducts } from "./klr";
 
 
 export const products = [
-  ...americanzProducts,
-  ...ansProducts,
-  ...apexProducts,
-  ...avvatarProducts,
-  ...dragonProducts,
-  ...foodProducts,
-  ...geneticProducts,
-  ...gncProducts,
-  ...hydeProducts,
-  ...labradaProducts,
-  ...maxnProducts,
-  ...muscletechProducts,
-  ...prosuppsProducts,
-  ...onProducts,
-  ...wellcoreProducts,
-  ...klrProducts,
-  ...comboProducts,
-  ...merchandiseProducts,
-];
+  ...americanzProducts.map(p => ({ ...p, type: "product" })),
+  ...ansProducts.map(p => ({ ...p, type: "product" })),
+  ...apexProducts.map(p => ({ ...p, type: "product" })),
+  ...avvatarProducts.map(p => ({ ...p, type: "product" })),
+  ...dragonProducts.map(p => ({ ...p, type: "product" })),
+  ...foodProducts.map(p => ({ ...p, type: "product" })),
+  ...geneticProducts.map(p => ({ ...p, type: "product" })),
+  ...gncProducts.map(p => ({ ...p, type: "product" })),
+  ...hydeProducts.map(p => ({ ...p, type: "product" })),
+  ...labradaProducts.map(p => ({ ...p, type: "product" })),
+  ...maxnProducts.map(p => ({ ...p, type: "product" })),
+  ...muscletechProducts.map(p => ({ ...p, type: "product" })),
+  ...prosuppsProducts.map(p => ({ ...p, type: "product" })),
+  ...onProducts.map(p => ({ ...p, type: "product" })),
+  ...wellcoreProducts.map(p => ({ ...p, type: "product" })),
+  ...klrProducts.map(p => ({ ...p, type: "product" })),
 
+  // combos already have type: "combo"
+  ...comboProducts,
+
+  // merchandise (if they are normal products)
+  ...merchandiseProducts.map(p => ({ ...p, type: "product" })),
+];
 
 
 export const brandCounts = products.reduce((acc,product )=>{
