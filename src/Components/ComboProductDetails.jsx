@@ -20,14 +20,14 @@ export default function ComboProductDetails() {
   }
 
   return (
-    <div className="container mx-auto p-6 grid md:grid-cols-2 gap-8">
+    <div className="container mx-auto p-6 grid md:grid-cols-2 gap-8 max-w-6xl">
       
       {/* LEFT: Images */}
       <div>
         <img
           src={activeImg}
           alt={product.name}
-          className="w-full rounded border"
+          className="w-full rounded-lg shadow-md"
         />
 
         <div className="flex gap-2 mt-4">
@@ -36,8 +36,8 @@ export default function ComboProductDetails() {
               key={i}
               src={img}
               onClick={() => setActiveImg(img)}
-              className={`w-16 h-16 cursor-pointer border rounded
-                ${activeImg === img ? "border-black" : "border-gray-300"}
+              className={`w-16 h-16 cursor-pointer border-2 rounded-lg transition-all duration-200 hover:scale-105
+                ${activeImg === img ? "border-red-600 shadow-md" : "border-gray-300 hover:border-gray-400"}
               `}
             />
           ))}
@@ -46,36 +46,49 @@ export default function ComboProductDetails() {
 
       {/* RIGHT: Details */}
       <div>
-        <h1 className="text-2xl font-bold">{product.name}</h1>
-        <p className="text-gray-600">{product.brand}</p>
-        <p className="text-xl font-semibold mt-2">₹{product.price}</p>
+        <h1 className="text-3xl font-bold mb-2">{product.name}</h1>
+        <p className="text-gray-600 text-lg">{product.brand}</p>
+        <p className="text-2xl font-bold text-red-600 mt-4">₹{product.price}</p>
 
         {/* Combo Items */}
-        <div className="mt-6">
-          <h2 className="font-semibold mb-3">Combo Includes</h2>
+        <div className="mt-8">
+          <h2 className="font-bold text-xl mb-6 text-gray-900">What's Included:</h2>
 
           {product.comboItems.map((item, i) => (
-            <div key={i} className="mb-4 border p-3 rounded">
-              <p className="font-medium">
-                {item.qty} x {item.name} {item.weight && `(${item.weight})`}
+            <div key={i} className="mb-6 bg-white rounded-lg p-5 shadow-sm hover:shadow-md transition-shadow">
+              <p className="font-bold text-lg text-gray-900">
+                {item.qty}x {item.name} {item.weight && `(${item.weight})`}
               </p>
 
               {/* Flavour selector per item */}
               {item.flavours?.length > 0 && (
-                <select
-                  className="mt-2 border p-2 w-full rounded transition duration-200 ease-out hover:border-black focus:outline-none focus:ring-2 focus:ring-black/40"
-                  value={selectedFlavours[i] || ""}
-                  onChange={(e) =>
-                    setSelectedFlavours((prev) => ({ ...prev, [i]: e.target.value }))
-                  }
-                >
-                  <option value="">Select flavour</option>
-                  {item.flavours.map((flavour, idx) => (
-                    <option key={idx} value={flavour}>
-                      {flavour}
-                    </option>
-                  ))}
-                </select>
+                <div className="mt-4">
+                  <label className="text-sm font-semibold text-gray-700 block mb-3">
+                    Choose Flavour:
+                  </label>
+                  <div className="flex flex-wrap gap-2">
+                    {item.flavours.map((flavour, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() =>
+                          setSelectedFlavours((prev) => ({ ...prev, [i]: flavour }))
+                        }
+                        className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 border-2 ${
+                          selectedFlavours[i] === flavour
+                            ? "bg-red-600 text-white border-red-600 shadow-md"
+                            : "bg-white text-gray-700 border-gray-300 hover:border-red-400 hover:bg-red-50"
+                        }`}
+                      >
+                        {flavour}
+                      </button>
+                    ))}
+                  </div>
+                  {selectedFlavours[i] && (
+                    <p className="text-sm text-green-600 font-medium mt-2">
+                      ✓ {selectedFlavours[i]} selected
+                    </p>
+                  )}
+                </div>
               )}
             </div>
           ))}
@@ -88,7 +101,7 @@ export default function ComboProductDetails() {
               selectedFlavours,
             })
           }
-          className="mt-6 bg-black text-white px-6 py-2 rounded transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
+          className="mt-8 w-full bg-red-600 text-white px-6 py-3 rounded-lg font-bold text-lg transition-all duration-200 hover:bg-red-700 hover:-translate-y-1 hover:shadow-lg active:translate-y-0"
         >
           Add Combo to Cart
         </button>
