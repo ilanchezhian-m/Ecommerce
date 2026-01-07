@@ -4,9 +4,9 @@ import { brands } from '../data/brands'
 import {brandslogo} from '../data/brandslogo'
 import { brandscategory } from '../data/brandscategory'
 import logo from '../assets/HomepageImages/Homeimage/logo.svg'
-import Brandcard from '../Components/Brandcard'
-import BrandLogocard from '../Components/BrandLogocard'
-import BrandCategories from '../Components/BrandCategories'
+import Brandcard from '../Components/Brandcard.jsx'
+import BrandLogocard from '../Components/BrandLogocard.jsx'
+import BrandCategories from '../Components/BrandCategories.jsx'
 
 
 

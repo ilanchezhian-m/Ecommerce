@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useLocation } from "react-router-dom";
-import ProductCard from "../Components/Productcard";
+import ProductCard from "../Components/Productcard.jsx";
 import { products } from "../data/brand/product";
 import { Link } from "react-router-dom";
 

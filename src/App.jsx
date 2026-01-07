@@ -1,15 +1,15 @@
 
 import './App.css'
 import { Routes,Route } from 'react-router-dom'
-import Layout from './Components/Layout'
-import Home from './pages/Home'
-import Shop from './pages/Shop'
-import Cart from './pages/Cart'
-import Login from './pages/Login'
-import Register from './pages/Register'
-import ProductDetails from './Components/ProductDetails'
-import Notfound from './pages/Notfound'
-import ComboProductDetails from './Components/ComboProductDetails'
+import Layout from './Components/Layout.jsx'
+import Home from './pages/Home.jsx'
+import Shop from './pages/Shop.jsx'
+import Cart from './pages/Cart.jsx'
+import Login from './pages/Login.jsx'
+import Register from './pages/Register.jsx'
+import ProductDetails from './Components/ProductDetails.jsx'
+import Notfound from './pages/Notfound.jsx'
+import ComboProductDetails from './Components/ComboProductDetails.jsx'
 
 
 function App() {
