@@ -67,7 +67,12 @@ export const comboProducts = [
   categories: ["combo"],
   images: [COMBO02],
   comboItems: [
-    { name: "MAXN Whey Protein", qty: 1, flavours: ["Unflavoured"] },
+    { 
+      name: "MAXN Whey Protein", 
+      qty: 1, 
+      weight: "2 Kg",
+      flavours: ["Rich Chocolate", "Cookies & Cream", "Vanilla Ice Cream", "Strawberry", "Mango", "Unflavoured"] 
+    },
     {
       name: "Americanz Muscles Creatine Monohydrate",
       qty: 1,

@@ -3,13 +3,17 @@
 import { comboProducts } from "../data/combo/combo";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
+import { useCart } from "../Context/CartContext";
 
 export default function ComboProductDetails() {
   const { id } = useParams();
 
-  const product = comboProducts.find(p => p.id === id);
+  const { addToCart } = useCart();
+
+  const product = comboProducts.find((p) => p.id === id);
 
   const [activeImg, setActiveImg] = useState(product?.images?.[0] || "");
+  const [selectedFlavours, setSelectedFlavours] = useState({});
 
   if (!product) {
     return <p className="p-6">Combo product not found</p>;
@@ -58,7 +62,13 @@ export default function ComboProductDetails() {
 
               {/* Flavour selector per item */}
               {item.flavours?.length > 0 && (
-                <select className="mt-2 border p-2 w-full">
+                <select
+                  className="mt-2 border p-2 w-full rounded transition duration-200 ease-out hover:border-black focus:outline-none focus:ring-2 focus:ring-black/40"
+                  value={selectedFlavours[i] || ""}
+                  onChange={(e) =>
+                    setSelectedFlavours((prev) => ({ ...prev, [i]: e.target.value }))
+                  }
+                >
                   <option value="">Select flavour</option>
                   {item.flavours.map((flavour, idx) => (
                     <option key={idx} value={flavour}>
@@ -71,7 +81,15 @@ export default function ComboProductDetails() {
           ))}
         </div>
 
-        <button className="mt-6 bg-black text-white px-6 py-2 rounded">
+        <button
+          onClick={() =>
+            addToCart({
+              ...product,
+              selectedFlavours,
+            })
+          }
+          className="mt-6 bg-black text-white px-6 py-2 rounded transition-transform duration-200 ease-out hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0"
+        >
           Add Combo to Cart
         </button>
       </div>

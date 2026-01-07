@@ -17,7 +17,7 @@ function Home() {
     <>
        <img src={image1} alt="front-banner" className='w-full h-auto'/>
     <div className='flex justify-center my-3'>
-        <button className='bg-red-700 font-bold px-3 py-2 text-white text-lg'>Visit Combo Page</button>
+        <button className='bg-red-700 font-bold px-3 py-2 text-white text-lg hover:bg-red-800 hover:-translate-y-1 transition-all duration-200'>Visit Combo Page</button>
        </div>
 {/* this file is from brandcard.jsx */}
        <div className='flex justify-center my-3'>

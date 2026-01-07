@@ -1,4 +1,6 @@
-export default function Brandcard({image,name,size ="md"}){
+import { Link } from 'react-router-dom';
+
+export default function Brandcard({image,name,size ="md", link}){
 
     const sizes = {
     sm: "w-20 sm:w-24 md:w-28 lg:w-32",
@@ -8,14 +10,14 @@ export default function Brandcard({image,name,size ="md"}){
   };
     return(
     
-    <div className='flex flex-col items-center mx-3'>
+    <Link to={link || '/shop'} className='flex flex-col items-center mx-3 group'>
                  <img 
                  src={image} 
                  alt={name}
-                 className={`${sizes[size]} h-auto`} />
-                    <p className='font-bold text-black bg-white w-full py-3 text-center shadow-lg rounded-md '>{name}                      
+                 className={`${sizes[size]} h-auto transition-transform duration-200 group-hover:scale-105`} />
+                    <p className='font-bold text-black bg-white w-full py-3 text-center shadow-lg rounded-md group-hover:-translate-y-1 transition-all duration-200'>{name}                      
                     </p>
-    </div>
+    </Link>
 );
 }
 

@@ -12,6 +12,7 @@ export default function Shop() {
   const query = new URLSearchParams(location.search);
   const urlBrand = query.get("brand") ? decodeURIComponent(query.get("brand")) : null;
   const urlCategory = query.get("category") ? decodeURIComponent(query.get("category")) : null;
+  const searchTerm = query.get("search") ? decodeURIComponent(query.get("search")) : null;
 
 
   // Compute brand counts
@@ -42,9 +43,16 @@ export default function Shop() {
     if (urlCategory) {
       filtered = filtered.filter((p) => p.categories && p.categories.includes(urlCategory));
     }
+
+    if (searchTerm) {
+      filtered = filtered.filter((p) => 
+        p.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        p.brand.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
     
     return filtered;
-  }, [urlBrand, urlCategory]);
+  }, [urlBrand, urlCategory, searchTerm]);
 
   return (
     <div className="flex flex-col lg:flex-row container mx-auto gap-6 p-6">
@@ -85,7 +93,7 @@ export default function Shop() {
       <main className="flex-1">
         <div className="mb-4">
           <h1 className="text-2xl font-bold">
-            {urlBrand || urlCategory || "All Products"}
+            {searchTerm ? `Search Results for "${searchTerm}"` : urlBrand || urlCategory || "All Products"}
           </h1>
           <p className="text-sm text-gray-600">
             Showing {filteredProducts.length} of {products.length} products
