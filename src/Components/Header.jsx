@@ -331,10 +331,10 @@ const totalQty = cart.reduce(
 
    {/* MOBILE HAMBURGER */}
         <button
-          className="lg:hidden text-2xl"
+          className="lg:hidden text-2xl text-gray-700 hover:text-red-600 transition-colors"
           onClick={() => setOpen(!open)}
         >
-          ☰
+          {open ? '✕' : '☰'}
         </button>
       </div>
 
